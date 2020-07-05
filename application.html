@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/application.css">
+  <link rel="stylesheet" href="css/fa/css/all.min.css">
+  <title>Dostavka</title>
+</head>
+<body>
+  <header style="top: 0px; right: 0px; left: 0px; position: fixed; z-index: 999;">
+    <nav>
+      <input type="checkbox" id="checkbox2"/>
+      <label for="checkbox2">
+        <ul class="menu second">
+          <a class="site-logo" href="index.html"><h1>Hizmat.tj</h1></a>
+          <div>
+            <ul class="navbar__links">
+              <li class="navbar__links-list" style=""><a class="navbar__links-listlink" href="index.html">Home</a></li>
+              <li class="navbar__links-list"><a class="navbar__links-listlink" href="#">Contact</a>
+                <ul class="navbar__links-navbar">
+                  <li><a href="#">Tovalar</a></li>
+                  <li><a href="#">Xizmatlar</a></li>
+                  <li><a href="#">Yetkazib berish</a></li>
+                  <li><a href="#">Service</a></li>
+                </ul>
+              </li>
+              <li class="navbar__links-list"><a class="navbar__links-listlink" href="#">About</a></li>
+              <li class="navbar__links-list"><a class="navbar__links-listlink" href="#">Service</a>
+                <ul class="navbar__links-navbar">
+                  <li><a href="#">Tovalar</a></li>
+                  <li><a href="#">Xizmatlar</a></li>
+                  <li><a href="#">Yetkazib berish</a></li>
+                  <li><a href="#">Service</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <li><a href="#">Заполнить заявку</a></li>
+          <li><button id="button-modal__open" type="button">Вход / Регистрация</button></li>
+          <li><span class="Balans">Balans:20</span></li>
+        </ul>
+        <div class="toggle">
+          <span class="toggle-left">☰ Menu</span>
+          <span class="toggle-right">Balans:20</span>
+        </div>
+      </label>
+    </nav>
+  </header>
+  <!-- header -->
+  <!-- form -->
+  <!-- ot kuda -->
+  <!-- <form action="#" method="POST"> -->
+    <section class="site-form__section">
+      <div class="site-form__onfoot">
+        <h2 class="site-form__onfoottitle">Когда забрать и доставить?</h2>
+        <div class="site-form__onfoot-box">
+          <div class="speed"><span class="fas fa-running site-form__onfoot-span"></span>Как можно скорее</div>
+          <div class="time"><span class="fas fa-clock site-form__onfoot-span site-form__onfoot-span2"></span>Ко времени</div>
+        </div>
+        <p class="site-form__onfoot-text">Курьер будет у вас в течение 45 минут</p>
+        <p class="site-form__onfoot-text2">Отправим курьера к указанному времени</p>
+      </div>
+      <div class="dv-order-tabs">
+        <div class="dv-order-tabs__tab"><span>Пешком</span></div>
+        <div class="dv-order-tabs__tabs"><span>Легковой автомобиль</span></div>
+        <div class="dv-order-tab__tab"><span>Грузовой</span></div>
+      </div>
+      <div class="activ">
+        <div class="activ__box active-left__border"><span>до 1 кг</span></div>
+        <div class="activ__box active-div"><span>до 5 кг</span></div>
+        <div class="activ__box actives-divs"><span>до 10 кг</span></div>
+        <div class="activ__box active-border"><span>до 15 кг</span></div>
+      </div>
+      <div class="activs">
+        <div class="activ__box active-left__border car-tosend"><span>до 50 кг</span></div>
+        <div class="activ__box active-div car-send-more"><span>до 100 кг</span></div>
+        <div class="activ__box actives-divs car-again"><span>до 150 кг</span></div>
+        <div class="activ__box active-border car-dispatch"><span>до 200 кг</span></div>
+      </div>
+      <div class="car-activs">
+        <div class="car-activs__boxs">
+          <div class="car-activs__box">
+            <img src="img/icon-pickup.png" alt="rasm" width="44" height="28">
+            <div>
+              <p class="car-activs__boxtext">Джип/Пикап</p>
+              <span class="car-activs__boxtext">до 2 м3, 500 кг</span>
+            </div>
+          </div>
+          <div class="car-activs__box">
+            <img src="img/icon-kabluk.png" alt="rasm" width="44" height="28">
+            <div>
+              <p class="car-activs__boxtext">Каблук</p>
+              <span class="car-activs__boxtext">до 3,2 м3, 700 кг</span>
+            </div>
+          </div>
+          <div class="car-activs__box">
+            <img src="img/icon-porter.png" alt="rasm" width="44" height="28">
+            <div>
+              <p class="car-activs__boxtext">Портер</p>
+              <span class="car-activs__boxtext">до 8 м3, 1000 кг</span>
+            </div>
+          </div>
+          <div class="car-activs__box">
+            <img src="img/icon-gazel.png" alt="rasm" width="44" height="28">
+            <div>
+              <p class="car-activs__boxtext">Газель</p>
+              <span class="car-activs__boxtext">до 17 м3, 1500 кг</span>
+            </div>
+          </div>
+        </div>
+        <div class="car-activs__inputbox">
+          <div> 
+            <input class="car-activs__input" type="text" name="text" placeholder="0" required>
+          </div>
+          <span class="car-activs__inputbox-span">кг</span>
+        </div>
+      </div>
+      <div class="site-form__container">
+        <div class="site-form__box">
+          <div class="site-form__boxform">
+            <div  id="map-canvas"></div>
+            <h2 class="site-form__containerttitle">Откуда</h2>
+            <input class="site__address" id="suggest1" type="text" name="text" placeholder="Покровка, 11" required>
+
+            <div class="site__section">
+              <input class="site__form-boxinput" type="tel" name="tel" placeholder="number" required>
+              <div id="divRemove" class="site-section__box">
+                <label for="message-text" class="col-form-label"></label>
+                <select class="form-control" name="sector" id="recipient-name">
+                  <option value="sector">sector</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                </select>
+                <label for="message-text" class="col-form-label"></label>
+                <select class="form-control" name="sector" id="recipient-name">
+                  <option value="sector">sector</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                </select>
+                <label for="message-text" class="col-form-label"></label>
+                <select class="form-control" name="sector" id="recipient-name">
+                  <option value="sector">sector</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                  <option value="sector">name</option>
+                </select>
+              </div>
+            </div>
+            <div class="box__additionally">
+              <p class="additionally__span">Дополнительно
+                <span class="fas fa-chevron-down"></span>
+              </p>
+            </div>
+            <div class="additionally-box">
+              <form class="additionally-box__form" action="#">
+                <input type="text" name="text" placeholder="Контактное лицо" required>
+                <input type="text" name="text" placeholder="Внутр. номер заказа" required>
+                <div>
+                  <div class="additionally-box__item">
+                    <p>кнопка выбора</p> <span class="fas fa-chevron-up additionally-box__itemspan"></span>
+                  </div>
+                  <div class="additionally-box__item-box">
+                    <p class="additionally-box__item-boxtext additionally-box__text">Денежных операций нет</p>
+                    <p class="additionally-box__item-boxtext additionally-box__text2">Выкупить товар</p>
+                  </div>
+                </div>
+                <div class="summa-input__box">
+                  <input class="additionally-box__input" type="number" name="number" placeholder="Сумма" required>
+                </div>
+                <div class="r-tooltip__target">
+                  <div class="r-tooltip__list">
+                    <p>Максимальная сумма выкупа 5000 рублей. Чтобы увеличить лимит, напишите в чат поддержки.</p>
+                    <div class="r-tooltip__border"></div>
+                  </div>
+                  <span class="fa fa-question"></span>
+                </div>
+              </form>
+            </div>
+            <div class="additionally-span2">
+              <p>Скрыть дополнительные поля
+                <span class="fas fa-chevron-up"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ot kuda -->
+    <!-- kuda -->
+    <section class="site-form__section">
+      <div class="site-form__container box">
+        <div class="site-form__box">
+          <div class="site-form__boxform">
+           <h2 class="site-form__containerttitle">Куда</h2>
+           <input class="site__address" type="text" id="suggest2" name="text" placeholder="Солянка, 4" required>
+           <div class="site__section">
+            <input class="site__form-boxinput" type="tel" name="tel" placeholder="number" required>
+            <div id="divRemove2" class="site-section__box">
+              <label for="message-text" class="col-form-label"></label>
+              <select class="form-control" name="sector" id="recipient-name">
+                <option value="sector">sector</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+              </select>
+              <label for="message-text" class="col-form-label"></label>
+              <select class="form-control" name="sector" id="recipient-name">
+                <option value="sector">sector</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+              </select>
+              <label for="message-text" class="col-form-label"></label>
+              <select class="form-control" name="sector" id="recipient-name">
+                <option value="sector">sector</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+                <option value="sector">name</option>
+              </select>
+            </div>
+          </div>
+          <div class="box__additionally add-boxs">
+            <p class="additionally__span span">Дополнительно
+              <span class="fas fa-chevron-down"></span>
+            </p>
+          </div>
+          <div class="additionally-box boxs">
+            <form class="additionally-box__form" action="#">
+              <input type="text" name="text" placeholder="Контактное лицо" required>
+              <input type="text" name="text" placeholder="Внутр. номер заказа" required>
+              <div>
+              <div class="additionally-box__item additionally-box__item2">
+                <p>кнопка выбора</p> <span class="fas fa-chevron-up additionally-box__itemspan"></span>
+              </div>
+              <div class="additionally-box__item-box additionally-box__item-box2">
+                <p class="additionally-box__item-boxtext additionally-box__text additionally-box__texts">Денежных операций нет</p>
+                <p class="additionally-box__item-boxtext additionally-box__text2 additionally-box__texts1">Выкупить товар</p>
+                <p class="additionally-box__item-boxtext additionally-box__texts2">Получить наличные</p>
+              </div>
+            </div>
+            <div class="summa-input__box summa-input__box2">
+              <input class="additionally-box__input" type="number" name="number" placeholder="Сумма" required>
+            </div>
+            <div class="r-tooltip__target r-tooltip__target2">
+              <div class="r-tooltip__list">
+                <p>Максимальная сумма выкупа 5000 рублей. Чтобы увеличить лимит, напишите в чат поддержки.</p>
+                <div class="r-tooltip__border"></div>
+              </div>
+              <span class="fa fa-question"></span>
+            </div>
+            <div class="additionally-box__input2-box">
+              <input class="additionally-box__input2" type="number" name="number" placeholder="tel" required>
+            </div>
+          </form>
+          <div class="additionally-span2 span2">
+            <p>Скрыть дополнительные поля
+              <span class="fas fa-chevron-up"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button id="addForm" class="site-addess__buttonadd" type="button">+
+      Добавить адрес</button>
+    </div>
+  </div>
+</section>
+<!-- kuda -->
+<section>
+  <div class="site-form__container box-send">
+    <div class="site-form__boxform">
+      <h2 class="site-form__containerttitle">Что везем</h2>
+      <div>
+        <!-- <form style="padding: 0;" action="#"> -->
+          <input class="site__address" type="text" name="text" placeholder="Что везем">
+          <!-- </form> -->
+        </div>
+        <ul class="site__sendlist">
+          <li>Документы</li>
+          <li>Продукты</li>
+          <li>Горячая еда</li>
+          <li>Подарок</li>
+          <li>Цветы</li>
+          <li>Торт</li>
+          <li>Другое</li>
+        </ul>
+        <input id="inputLabel" type="checkbox" name="checkbox">
+        <label style="margin-left: 5px;" for="inputLabel">Посылка большого размера</label>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="site-form__container box-send">
+      <div class="site-form__boxform">
+        <h2 class="site-form__containerttitle">Ценность посылки</h2>
+          <div>
+            <input class="site__address plus-ordermoney" type="text" name="text" placeholder="Ценность посылки">
+            <span>плюс 0 ₽ к заказу.</span>
+          </div>
+            <p class="plus-ordermoney-text">Компенсируем ценность утерянных отправлений и выручки<br> в течение трех рабочих дней по регламенту. Максимальная<br> компенсация — 50 000  Рубли</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="site-form__container box-send">
+        <div class="site-form__boxform">
+          <h2>Итого:1501 Рубли</h2>
+          <button id="send" class="site-send__button" type="button">Отправить заявку</button>
+          <p>Параметры смс-уведомлений можно выбрать после отправки заявки</p>
+        </div>
+      </div>
+    </section>
+  <!-- </form> -->
+  <!-- form -->
+  <!-- footer -->
+  <div class="foter">
+    <h5>ООО «Портал»  &copy;2020 </h5>
+  </div>
+  <!-- asosiy modal -->
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="button__close"><span class="fas fa-times "></span></button>
+      <div class='modal-boxspan'>
+        <!-- emailga otish -->
+        <div id="modalEmail" class='modal-span span-border-radius-right' onclick="emailLogin()">
+          <span>Для юрлиц</span>
+        </div>
+        <!-- emailga otish -->
+        <!-- telefonga otish -->
+        <div id="modalPhone" class="modal-span span-border-radius-left" onclick="numberLogin()"> 
+          <span>Для физлиц</span>
+        </div>
+        <!-- telefonga otish -->
+      </div>
+      <!-- telefon login parol -->
+      <form id="numberLogin" class='modal-form' action="#" method="POST">
+        <input type="tel" name="tel" placeholder="+998 Телефон" required>
+        <input type="password" name="password" placeholder="Пароль" required>
+        <div id='modal-password'>
+          <span>Забыли пароль?</span>
+        </div>
+        <button type="submit">Войти</button>
+      </form>
+      <!-- telefon login parol -->
+      <!-- email login parol -->
+      <form id="emailLogin" class='modal-form' action="#" method="POST">
+        <input type="email" name="email" placeholder="email" required>
+        <input type="password" name="password" placeholder="Пароль" required>
+        <div id='modal-password2'>
+          <span>Забыли пароль?</span>
+        </div>
+        <button type="submit">Войти</button>
+      </form>
+      <!-- email login parol -->
+    </div>
+    <div class="modal-checkin">
+      <button type="button">Регистрация</button>
+    </div>
+  </div>
+  <!-- asosiy modal -->
+  <!-- parolni qayta tiklash emailniki -->
+  <div class="modalItems">
+    <div class="modal__dialoglists">
+      <button class="button__close" id="modalItem__closes"><span class="fas fa-times "></span></button>
+      <h3 class="modalItems-title">Сброс пароля</h3>
+      <p>Пожалуйста, введите электронную почту которую вы указали при регистрации</p>
+      <form id="modalItems__form" action="#" method="POST">
+        <input type="email" name="email" placeholder="email" required>
+        <button type="submit">Выслать письмо восстановления</button>
+      </form>
+    </div>
+    <div class="modal__closes">
+      <button id="modal__closesbutton" type="button">Я вспомнил пароль</button>
+    </div>
+  </div>
+  <!-- parolni qayta tilash emailniki -->
+  <!-- parolni qayta tiklash telefonniki -->
+  <div class="modalItem">
+    <div class="modal__dialoglist">
+      <button class="button__close" id="modalItem__close"><span class="fas fa-times "></span></button>
+      <h3 class="modalItem__title">Обновление пароля</h3>
+      <form id="modalItem__form" action="#" method="POST">
+        <input type="tel" name="tel" placeholder="+998 Телефон" required>
+        <button class="modalItem__button">Получить код</button>
+        <input type="text" name="text" placeholder="Смс-код" required>
+        <button class="modalItem__form-button" type="submit">Log In</button>
+      </form>
+    </div>
+    <div class="modal__closes">
+      <button id="modal__closesbutton" type="button">Я вспомнил пароль</button>
+    </div>
+  </div>
+  <script src="./js/modal/modalapp.js"></script>
+  <script src="./js/modal/modal.js"></script>
+  <script src="./js/form2.js"></script>
+  <script src="js/apps.js"></script>
+  <script src="js/apps2.js"></script>
+  <script src="js/form.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+  <script src="js/suggest.js"></script>
+  <script src="js/provider.js"></script>
+  <script type="text/javascript">
+ ///////////////// modal email i tel border////
+    var elModalEmail = document.querySelector('#modalEmail')
+      var elModalPhone = document.querySelector('#modalPhone')
+
+      elModalEmail.addEventListener('click', function () {
+  // alert('ishladim')
+        elModalEmail.classList.add('border')
+        elModalPhone.classList.remove('border')
+      })
+      elModalPhone.addEventListener('click', function () {
+        elModalPhone.classList.add('border')
+        elModalEmail.classList.remove('border')
+      })
+////////////// modal yugaz//
+
+const x = document.getElementById("numberLogin")
+const y = document.getElementById("emailLogin")
+
+function numberLogin() {
+  x.style.left = "0px"
+  y.style.left = "-450px"
+}
+function emailLogin() {
+  x.style.left = "500px"
+  y.style.left = "0px"
+}
+</script>
+</body>
+</html>
