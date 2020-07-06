@@ -1331,6 +1331,36 @@ nav {
     .modalItem {
         z-index: 999;
     }
+    .modal-span {
+        padding: 7px 8px;
+    }
+    .modal__dialog {
+        width: 320px;
+    }
+    .modal-checkin {
+        width: 320px;
+    }
+    .modal__dialoglists {
+        width: 320px;
+    }
+    .modal__dialoglist {
+        width: 320px;
+    }
+    .modal__closes {
+        width: 320px;
+    }
+    #modalItems__form {
+        padding: 0;
+    }
+    #modalItems__form button {
+        font-size: 12px;
+    }
+    #modalItem__form {
+        padding: 0;
+    }
+    #modalItem__form button {
+        font-size: 12px;
+    }
     .modalItem__button {
         right: 0;
     }
