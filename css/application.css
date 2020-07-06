@@ -874,161 +874,6 @@ nav {
 .display-block {
     display: block;
 }
-@media (max-width: 980px) {
-    .site-section__box {
-        margin-left: auto;
-    }
-   .navbar__links {
-     display: none;
-    }
-    #header .container {
-        width: auto;
-    }
-    .site-form__container {
-        width: 500px;
-    }
-    .site-form__boxform {
-        padding: 5px 10px;
-    }
-    .site__section {
-        display: block;
-        width: auto;
-    }
-    .site__form-boxinput {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .site-section__box {
-        display: flex;
-    }
-    .form-control {
-        width: auto;
-        padding: 8px 0;
-    }
-    .site__sendlist {
-        display: block;
-    }
-    .site__sendlist li {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    .section--open {
-        display: none;
-    }
-}
-/*moshlashuvchan dispaly 750px*/
-@media (max-width: 750px) {
-    .site-section__box {
-        margin-left: 0;
-    }
-    .site-form__onfoot {
-        width: auto;
-        padding: 20px;
-    }
-    .site-form__onfoot-box {
-        display: block;
-        width: auto;
-    }
-    .speed {
-        margin-right: 0;
-    }
-    .dv-order-tabs {
-        display: block;
-        width: auto;
-        padding: 20px;
-    }
-    .activ {
-        display: block;
-        width: auto;
-        padding: 20px;
-    }
-    .activs {
-        display: none;
-        width: auto;
-        padding: 20px;
-    }
-    .car-activs {
-        overflow: auto;
-    }
-    .activ__box {
-        display: block;
-        width: auto;
-        border-radius: 5px;
-        border: 1px solid black;
-        border-top: 0;
-    }
-    .active-left__border {
-        border-top: 1px solid black;
-    }
-    .dv-order-tabs__tab {
-        border-radius: 5px;
-    }
-    .dv-order-tabs__tabs {
-        border-radius: 5px;
-        border: 1px solid black;
-        border-top: 0;
-    }
-    .dv-order-tab__tab {
-        border-radius: 5px;
-        border-top: 0;
-    }
-    #header .container {
-        width: 300px;
-    }
-    .site-form__container {
-        width: 300px;
-    }
-    .site-form__boxform {
-        padding: 5px 10px;
-    }
-    .site__section {
-        /*display: block;*/
-        flex-direction: column;
-        width: auto;
-    }
-    .site__form-boxinput {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .site-section__box {
-        display: flex;
-    }
-    .form-control {
-        width: auto;
-        padding: 8px 0;
-    }
-    .site__sendlist {
-        display: block;
-    }
-    .site__sendlist li {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    .remove {
-        display: none;
-    }
-    .site__section {
-        display: flex;
-    }
-    .display-add {
-        display: inline-flex;
-    }
-    .font-weight {
-        font-weight: bold;
-    }
-    .div {
-        display: none;
-    }
-    .divs {
-        display: block;
-    }
-    .display-block {
-        display: block;
-    }
-    .section--open {
-        display: none;
-    }
-}
 /*asosiy modal*/
 .modal {
     display: none;
@@ -1288,4 +1133,205 @@ nav {
     padding: 5px 5px;
     color: #fff;
     font-weight: bold;
+}
+@media (max-width: 980px) {
+    .site-section__box {
+        margin-left: auto;
+    }
+   .navbar__links {
+     display: none;
+    }
+    #header .container {
+        width: auto;
+    }
+    .site-form__container {
+        width: 500px;
+    }
+    .site-form__boxform {
+        padding: 5px 10px;
+    }
+    .site__section {
+        display: block;
+        width: auto;
+    }
+    .site__form-boxinput {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .site-section__box {
+        display: flex;
+    }
+    .form-control {
+        width: auto;
+        padding: 8px 0;
+    }
+    .site__sendlist {
+        display: block;
+    }
+    .site__sendlist li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .section--open {
+        display: none;
+    }
+}
+/*moshlashuvchan dispaly 750px*/
+@media (max-width: 750px) {
+    .site-section__box {
+        margin-left: 0;
+    }
+    .site-form__onfoot {
+        width: auto;
+        padding: 20px;
+    }
+    .site-form__onfoot-box {
+        display: block;
+        width: auto;
+    }
+    .speed {
+        margin-right: 0;
+    }
+    .dv-order-tabs {
+        display: block;
+        width: auto;
+        padding: 20px;
+    }
+    .activ {
+        display: block;
+        width: auto;
+        padding: 20px;
+    }
+    .activs {
+        display: none;
+        width: auto;
+        padding: 20px;
+    }
+    .car-activs {
+        width: 400px;
+        overflow: auto;
+    }
+    .car-activs__box {
+        min-width: 50%;
+        font-size: 10px;
+    }
+    .activ__box {
+        display: block;
+        width: auto;
+        border-radius: 5px;
+        border: 1px solid black;
+        border-top: 0;
+    }
+    .active-left__border {
+        border-top: 1px solid black;
+    }
+    .dv-order-tabs__tab {
+        border-radius: 5px;
+    }
+    .dv-order-tabs__tabs {
+        border-radius: 5px;
+        border: 1px solid black;
+        border-top: 0;
+    }
+    .dv-order-tab__tab {
+        border-radius: 5px;
+        border-top: 0;
+    }
+    /*zakaz form*/
+    .additionally-box__form {
+        display: block;
+        width: 100%;
+    }
+    .additionally-box input {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .additionally-box__item {
+        width: 100%;
+    }
+    .additionally-box__item-box {
+        width: auto;
+        z-index: 999;
+    }
+    .r-tooltip__target {
+        margin-top: 20px;
+        margin-left: 0;
+        flex-shrink: 0;
+        border: none;
+        margin-left: 20px;
+    }
+    .r-tooltip__list {
+        right: -18px;
+    }
+    .additionally-box__input2-box {
+        margin-top: 8px;
+    }
+/*zakaz form*/
+    #header .container {
+        width: 300px;
+    }
+    .site-form__container {
+        width: 300px;
+    }
+    .site-form__boxform {
+        padding: 5px 10px;
+    }
+    .site__section {
+        flex-direction: column;
+        width: auto;
+    }
+    .site__form-boxinput {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .site-section__box {
+        display: flex;
+    }
+    .form-control {
+        width: auto;
+        padding: 8px 0;
+    }
+    .site__sendlist {
+        display: block;
+    }
+    .site__sendlist li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .remove {
+        display: none;
+    }
+    .site__section {
+        display: inline-flex;
+    }
+    .display-add {
+        display: inline-flex;
+    }
+    .font-weight {
+        font-weight: bold;
+    }
+    .div {
+        display: none;
+    }
+    .divs {
+        display: block;
+    }
+    .display-block {
+        display: block;
+    }
+    .section--open {
+        display: none;
+    }
+    .modal {
+        z-index: 999;
+    }
+    .modalItems {
+        z-index: 999;
+    }
+    .modalItem {
+        z-index: 999;
+    }
+    .modalItem__button {
+        right: 0;
+    }
 }
