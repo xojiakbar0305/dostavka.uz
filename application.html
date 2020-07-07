@@ -375,7 +375,7 @@
       <!-- email login parol -->
     </div>
     <div class="modal-checkin">
-      <button type="button">Регистрация</button>
+      <button class="sign-up__button" type="button">Регистрация</button>
     </div>
   </div>
   <!-- asosiy modal -->
@@ -413,20 +413,24 @@
   </div>
   <div class="sign-up__modal">
     <div class="sign-up__container">
-      <div style="display: flex; justify-content: center; margin-bottom: 20px;">
-        <div style="margin: 5px; border: 1px solid black;"><span>salom</span></div>
-        <div style="margin: 5px; border: 1px solid black;"><span>alik</span></div>
+      <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;margin-top: 20px;">
+        <div style="width: 100%; text-align: center; padding: 20px 20px; border: 1px solid black;">
+          <span>Для физлиц</span>
+        </div>
+        <div style="width: 100%; text-align: center; padding: 20px 20px; border: 1px solid black;">
+          <span>Для юрлиц</span>
+        </div>
       </div>
-      <p style="margin-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, eligendi!</p>
+      <p style="margin-bottom: 30px;">Вопрос срочный? <a href="#">Оформите доставку</a> за одну минуту без регистрации и договора. Регистрация нужна если вы заказываете курьера регулярно.</p>
       <form style="padding: 0;" action="#" action="GET">
-        <input style="width: 100%; margin-bottom: 15px; padding: 15px 10px;" type="text" name="text" placeholder="Имя" required>
-        <input style="width: 100%; margin-bottom: 15px; padding: 15px 10px;" type="text" name="text" placeholder="Задайте пароль" required>
-        <input style="width: 100%; margin-bottom: 15px; padding: 15px 10px;" type="number" name="number" placeholder="Телефон">
-        <span>Получить код</span>
-        <input style="width: 100%; margin-bottom: 15px; padding: 15px 10px;" type="number" name="number" placeholder="Смс-код" required>
+        <input style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="text" name="text" placeholder="Имя" required>
+        <input style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="text" name="text" placeholder="Задайте пароль" required>
+        <input style="width: 100%; padding: 15px 10px; outline: none;" type="number" name="number" placeholder="Телефон">
+        <span style="margin-bottom: 15px; margin-top: 5px; border-radius: 5px; color: #fff; cursor: pointer; background-color: blue; padding:5px 10px; display: inline-flex;">Получить код</span>
+        <input style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="number" name="number" placeholder="Смс-код" required>
         <button style="width: 100%; padding: 15px 0 15px 0" type="submit">Регистрация</button>
       </form>
-      <button style="position: absolute;top: 0; right: 0;">close</button>
+      <button style="position: absolute;top: 10px; right: 10px; border: 0; background-color: #fff; outline: none;cursor: pointer;"><span class="fas fa-times"></span></button>
     </div>
       <button style="width: 400px; margin: 0 auto; display: flex; justify-content: center; outline: none; border: none; cursor: pointer; padding: 15px 0 15px 0;">Вход</button>
   </div>
@@ -440,6 +444,13 @@
   <script src="js/suggest.js"></script>
   <script src="js/provider.js"></script>
   <script type="text/javascript">
+    const signUpButton = document.querySelector('.sign-up__button')
+    const modal = document.querySelector('.modal')
+
+    signUpButton.addEventListener('click', function () {
+      signUpButton.class.add('sign-up--open')
+      modal.classList.remove('modal--open')
+    })
  ///////////////// modal email i tel border////
     var elModalEmail = document.querySelector('#modalEmail')
       var elModalPhone = document.querySelector('#modalPhone')

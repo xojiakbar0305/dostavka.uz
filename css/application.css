@@ -1138,14 +1138,15 @@ nav {
     font-weight: bold;
 }
 .sign-up__modal {
-    display: none;
+    /*display: none;*/
     position: fixed;
-    z-index: 999;
+    z-index: 1000;
     left: 0;
     bottom: 0;
     top: 0;
     right: 0;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x:hidden; 
     background-color: rgba(0, 0, 0, 0.5);
 }
 .sign-up__container {

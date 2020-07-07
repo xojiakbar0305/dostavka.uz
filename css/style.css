@@ -703,9 +703,6 @@ nav {
     overflow: hidden;
 
 }
-.modal--open {
-    display: block;
-}
 .button__close {
     position: absolute;
     top: 20px;
@@ -970,6 +967,99 @@ nav {
     padding: 5px 5px;
     color: #fff;
     font-weight: bold;
+}
+.sign-up__modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    overflow-x:hidden; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.sign-up__container {
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    padding: 30px;
+    background-color: #fff;
+    margin: 60px auto;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.sign-up__modalboxs {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.sign-up__modalbox {
+    width: 100%; 
+    text-align: center; 
+    padding: 20px 20px; 
+    border: 1px solid black;
+    cursor: pointer;
+}
+.sign-up__leftborder {
+    border-top-left-radius: 5px; 
+    border-bottom-left-radius: 5px;
+    border-right: 0;
+}
+.sign-up__rightborder {
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px;
+}
+.sign-up__modalinput {
+    width: 100%; 
+    margin-bottom: 15px; 
+    padding: 15px 10px; 
+    outline: none;
+}
+.sign-up__modalspan {
+    display: inline-flex;
+    margin-bottom: 15px; 
+    margin-top: 5px; 
+    border-radius: 5px; 
+    color: #fff; 
+    cursor: pointer; 
+    background-color: blue; padding:5px 10px; 
+}
+.sign-up__signbutton {
+    width: 100%; 
+    padding: 15px 0 15px 0;
+    background-color: orangered;
+    border: 0;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.sign-up__closebutton {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    border: 0; 
+    background-color: #fff; 
+    outline: none;
+    cursor: pointer;
+}
+.sign-up__backbutton {
+    width: 400px; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: center; 
+    outline: none; 
+    border: none; 
+    cursor: pointer; 
+    padding: 15px 0 15px 0;
+    color: blue;
+}
+.modal--open {
+    display: block;
 }
 @media (max-width: 1150px) {
     .navbar__links {

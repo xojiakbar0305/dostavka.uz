@@ -274,7 +274,7 @@
 			</form>
 		</div>
 		<div class="modal-checkin">
-			<button>Регистрация</button>
+			<button class="sign-up__button">Регистрация</button>
 		</div>
 	</div>
 	<!-- parolni qayta tiklash emailniki -->
@@ -310,9 +310,62 @@
 		</div>
 	</div>
 	<!-- parolni qayta tiklash telefonniki -->
+	  <div class="sign-up__modal">
+    <div class="sign-up__container">
+      <div class="sign-up__modalboxs">
+        <div class="sign-up__modalbox sign-up__leftborder">
+          <span>Для физлиц</span>
+        </div> 
+        <div class="sign-up__modalbox sign-up__rightborder">
+          <span>Для юрлиц</span>
+        </div>
+      </div>
+      <p style="margin-bottom: 30px;">Вопрос срочный? <a href="#">Оформите доставку</a> за одну минуту без регистрации и договора. Регистрация нужна если вы заказываете курьера регулярно.</p>
+      <form style="padding: 0;" action="#" action="GET">
+        <input class="sign-up__modalinput" type="text" name="text" placeholder="Имя" required>
+        <input class="sign-up__modalinput" style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="text" name="text" placeholder="Задайте пароль" required>
+        <input class="sign-up__modalinput" type="number" name="number" placeholder="Телефон">
+        <span class="sign-up__modalspan">Получить код</span>
+        <input class="sign-up__modalinput" type="number" name="number" placeholder="Смс-код" required>
+        <button class="sign-up__signbutton" type="submit">Регистрация</button>
+      </form>
+      <button class="sign-up__closebutton"><span class="fas fa-times"></span></button>
+    </div>
+      <button class="sign-up__backbutton">Вход</button>
+  </div>
 	<script src="js/modal/modalapp.js"></script>
 	<script src="js/modal/modal.js"></script>
 	<script>
+	const signUpButton = document.querySelector('.sign-up__button')
+	const signUpModal = document.querySelector('.sign-up__modal')
+    const signUpCloseButton = document.querySelector('.sign-up__closebutton')
+    const signUpBackButton = document.querySelector('.sign-up__backbutton')
+
+    signUpButton.addEventListener('click', function () {
+      signUpModal.classList.add('modal--open')
+    })
+
+    signUpModal.addEventListener('click', function () {
+    	signUpModal.classList.remove('modal--open')
+    })
+
+    signUpCloseButton.addEventListener('click', function () {
+    	signUpModal.classList.remove('modal--open')
+    })
+
+
+    signUpBackButton.addEventListener('click', function () {
+    	signUpModal.classList.remove('modal--open')
+    })
+
+   let keyUp = document.addEventListener('keyup', function (evt) {
+    	if (evt.keyCode === 27) {
+    		signUpModal.classList.remove('modal--open')
+    	}
+    })
+
+
+	//////////
 		var elModalEmail = document.querySelector('#modalEmail')
     	var elModalPhone = document.querySelector('#modalPhone')
 
