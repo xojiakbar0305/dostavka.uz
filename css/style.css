@@ -971,7 +971,7 @@ nav {
 .sign-up__modal {
     display: none;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
     left: 0;
     bottom: 0;
     top: 0;
@@ -983,7 +983,7 @@ nav {
 .sign-up__container {
     position: relative;
     width: 400px;
-    min-height: 400px;
+    min-height: 640px;
     padding: 30px;
     background-color: #fff;
     margin: 60px auto;
@@ -1004,10 +1004,32 @@ nav {
     border: 1px solid black;
     cursor: pointer;
 }
+#signUpBox1 {
+    left: 0;
+}
+#signUpBox2 {
+    left: 500px;
+}
+.sign-up__form1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px;
+    left: 0px;
+}
+.sign-up__form2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*z-index: 1000;*/
+    padding: 0 30px;
+    background-color: #fff;
+}
 .sign-up__leftborder {
     border-top-left-radius: 5px; 
     border-bottom-left-radius: 5px;
-    border-right: 0;
 }
 .sign-up__rightborder {
     border-top-right-radius: 5px; 
@@ -1021,7 +1043,8 @@ nav {
 }
 .sign-up__modalspan {
     display: inline-flex;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
+    width: 40%; 
     margin-top: 5px; 
     border-radius: 5px; 
     color: #fff; 
@@ -1057,6 +1080,12 @@ nav {
     cursor: pointer; 
     padding: 15px 0 15px 0;
     color: blue;
+}
+.border-sign {
+    border: 1px solid orangered;
+}
+.modal-shown {
+    display: block;
 }
 .modal--open {
     display: block;

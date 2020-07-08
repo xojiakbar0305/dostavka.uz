@@ -1138,7 +1138,7 @@ nav {
     font-weight: bold;
 }
 .sign-up__modal {
-    /*display: none;*/
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;

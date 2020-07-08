@@ -310,18 +310,19 @@
 		</div>
 	</div>
 	<!-- parolni qayta tiklash telefonniki -->
-	  <div class="sign-up__modal">
+	<div class="sign-up__modal">
     <div class="sign-up__container">
       <div class="sign-up__modalboxs">
-        <div class="sign-up__modalbox sign-up__leftborder">
+        <div id="signUpClikc" class="sign-up__modalbox sign-up__leftborder" onclick="signUpBox1()">
           <span>Для физлиц</span>
         </div> 
-        <div class="sign-up__modalbox sign-up__rightborder">
+        <div id="signUpClikc2" class="sign-up__modalbox sign-up__rightborder" onclick="signUpBox2()">
           <span>Для юрлиц</span>
         </div>
       </div>
       <p style="margin-bottom: 30px;">Вопрос срочный? <a href="#">Оформите доставку</a> за одну минуту без регистрации и договора. Регистрация нужна если вы заказываете курьера регулярно.</p>
-      <form style="padding: 0;" action="#" action="GET">
+      <!-- <div style="display: flex;"> -->
+      <form id="signUpBox1" class="sign-up__form1" action="#" action="GET">
         <input class="sign-up__modalinput" type="text" name="text" placeholder="Имя" required>
         <input class="sign-up__modalinput" style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="text" name="text" placeholder="Задайте пароль" required>
         <input class="sign-up__modalinput" type="number" name="number" placeholder="Телефон">
@@ -329,42 +330,22 @@
         <input class="sign-up__modalinput" type="number" name="number" placeholder="Смс-код" required>
         <button class="sign-up__signbutton" type="submit">Регистрация</button>
       </form>
+      <form id="signUpBox2" class="sign-up__form2" action="#" action="GET">
+        <input class="sign-up__modalinput" type="text" name="text" placeholder="Имя" required>
+        <input class="sign-up__modalinput" style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="text" name="text" placeholder="Задайте пароль" required>
+        <input class="sign-up__modalinput" type="number" name="number" placeholder="Телефон">
+        <input class="sign-up__modalinput" type="number" name="number" placeholder="Запасной телефон" required>
+        <button class="sign-up__signbutton" type="submit">Регистрация</button>
+      </form>
+  	<!-- </div> -->
       <button class="sign-up__closebutton"><span class="fas fa-times"></span></button>
     </div>
       <button class="sign-up__backbutton">Вход</button>
   </div>
-	<script src="js/modal/modalapp.js"></script>
-	<script src="js/modal/modal.js"></script>
+  	<script src="./js/signUp.js"></script>
+	<script src="./js/modal/modalapp.js"></script>
+	<script src="./js/modal/modal.js"></script>
 	<script>
-	const signUpButton = document.querySelector('.sign-up__button')
-	const signUpModal = document.querySelector('.sign-up__modal')
-    const signUpCloseButton = document.querySelector('.sign-up__closebutton')
-    const signUpBackButton = document.querySelector('.sign-up__backbutton')
-
-    signUpButton.addEventListener('click', function () {
-      signUpModal.classList.add('modal--open')
-    })
-
-    signUpModal.addEventListener('click', function () {
-    	signUpModal.classList.remove('modal--open')
-    })
-
-    signUpCloseButton.addEventListener('click', function () {
-    	signUpModal.classList.remove('modal--open')
-    })
-
-
-    signUpBackButton.addEventListener('click', function () {
-    	signUpModal.classList.remove('modal--open')
-    })
-
-   let keyUp = document.addEventListener('keyup', function (evt) {
-    	if (evt.keyCode === 27) {
-    		signUpModal.classList.remove('modal--open')
-    	}
-    })
-
-
 	//////////
 		var elModalEmail = document.querySelector('#modalEmail')
     	var elModalPhone = document.querySelector('#modalPhone')
@@ -380,6 +361,19 @@
     	})
 
 
+//////////////////////////////////////
+var signUpClikc = document.querySelector('#signUpClikc')
+var signUpClikc2 = document.querySelector('#signUpClikc2')
+
+signUpClikc.addEventListener('click', function () {
+	signUpClikc.classList.add('border-sign')
+	signUpClikc2.classList.remove('border-sign')
+})
+
+signUpClikc2.addEventListener('click', function () {
+	signUpClikc2.classList.add('border-sign')
+	signUpClikc.classList.remove('border-sign')
+})
 
 
 		var x = document.getElementById("numberLogin")
@@ -392,6 +386,19 @@
 		function emailLogin() {
 			x.style.left = "500px"
 			y.style.left = "0px"
+		}
+
+
+		var z = document.getElementById("signUpBox1")
+		var c = document.getElementById("signUpBox2")
+
+		function signUpBox1() {
+			z.style.left = "0px"
+			c.style.left = "500px"
+		}
+		function signUpBox2() {
+			z.style.left = "-500px"
+			c.style.left = "0px"
 		}
 	</script>
 </body>
