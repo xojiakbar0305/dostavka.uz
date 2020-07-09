@@ -957,7 +957,6 @@ nav {
 }
 .modalItem__button {
     position: relative;
-    right: -208px;
     cursor: pointer;
     margin-top: 10px;
     border: none;
@@ -1023,7 +1022,6 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /*z-index: 1000;*/
     padding: 0 30px;
     background-color: #fff;
 }
@@ -1508,8 +1506,31 @@ nav {
     }
     .modalItem__button {
         right: 0;
+        font-size: 13px;
     }
     .modal__closes {
+        width: 320px;
+    }
+    .modal-form button {
+        font-size: 12px;
+    }
+    .modalItem__form-button {
+        font-size: 12px;
+    }
+    .sign-up__container {
+        width: 320px;
+    }
+    .sign-up__modalbox {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .sign-up__modalspan {
+        font-size: 13px;
+    }
+    .sign-up__signbutton {
+        font-size: 12px;
+    }
+    .sign-up__backbutton {
         width: 320px;
     }
 }

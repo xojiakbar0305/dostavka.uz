@@ -375,7 +375,7 @@
       <!-- email login parol -->
     </div>
     <div class="modal-checkin">
-      <button class="sign-up__button" type="button">Регистрация</button>
+      <button class="sign-up__button sign-up__button2" type="button">Регистрация</button>
     </div>
   </div>
   <!-- asosiy modal -->
@@ -411,46 +411,50 @@
       <button id="modal__closesbutton" type="button">Я вспомнил пароль</button>
     </div>
   </div>
-  <div class="sign-up__modal">
-    <div class="sign-up__container">
-      <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;margin-top: 20px;">
-        <div style="width: 100%; text-align: center; padding: 20px 20px; border: 1px solid black;">
+  <!-- royhatdan otish form -->
+ <div class="sign-up__modal2">
+    <div class="sign-up__container2">
+      <div class="sign-up__modalboxs">
+        <div id="signUpClikc" class="sign-up__modalbox sign-up__leftborder" onclick="signUpBox1()">
           <span>Для физлиц</span>
-        </div>
-        <div style="width: 100%; text-align: center; padding: 20px 20px; border: 1px solid black;">
+        </div> 
+        <div id="signUpClikc2" class="sign-up__modalbox sign-up__rightborder" onclick="signUpBox2()">
           <span>Для юрлиц</span>
         </div>
       </div>
       <p style="margin-bottom: 30px;">Вопрос срочный? <a href="#">Оформите доставку</a> за одну минуту без регистрации и договора. Регистрация нужна если вы заказываете курьера регулярно.</p>
-      <form style="padding: 0;" action="#" action="GET">
-        <input style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="text" name="text" placeholder="Имя" required>
-        <input style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="text" name="text" placeholder="Задайте пароль" required>
-        <input style="width: 100%; padding: 15px 10px; outline: none;" type="number" name="number" placeholder="Телефон">
-        <span style="margin-bottom: 15px; margin-top: 5px; border-radius: 5px; color: #fff; cursor: pointer; background-color: blue; padding:5px 10px; display: inline-flex;">Получить код</span>
-        <input style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="number" name="number" placeholder="Смс-код" required>
-        <button style="width: 100%; padding: 15px 0 15px 0" type="submit">Регистрация</button>
+      <!-- <div style="display: flex;"> -->
+      <form id="signUpBox1" class="sign-up__form1" action="#" action="GET">
+        <input class="sign-up__modalinput" type="text" name="text" placeholder="Имя" required>
+        <input class="sign-up__modalinput" style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="text" name="text" placeholder="Задайте пароль" required>
+        <input class="sign-up__modalinput" type="number" name="number" placeholder="Телефон">
+        <span class="sign-up__modalspan">Получить код</span>
+        <input class="sign-up__modalinput" type="number" name="number" placeholder="Смс-код" required>
+        <button class="sign-up__signbutton" type="submit">Регистрация</button>
       </form>
-      <button style="position: absolute;top: 10px; right: 10px; border: 0; background-color: #fff; outline: none;cursor: pointer;"><span class="fas fa-times"></span></button>
+      <form id="signUpBox2" class="sign-up__form2" action="#" action="GET">
+        <input class="sign-up__modalinput" type="text" name="text" placeholder="Имя" required>
+        <input class="sign-up__modalinput" style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="text" name="text" placeholder="Задайте пароль" required>
+        <input class="sign-up__modalinput" type="number" name="number" placeholder="Телефон">
+        <input class="sign-up__modalinput" type="number" name="number" placeholder="Запасной телефон" required>
+        <button class="sign-up__signbutton" type="submit">Регистрация</button>
+      </form>
+    <!-- </div> -->
+      <button class="sign-up__closebutton sign-up__closebutton2"><span class="fas fa-times"></span></button>
     </div>
-      <button style="width: 400px; margin: 0 auto; display: flex; justify-content: center; outline: none; border: none; cursor: pointer; padding: 15px 0 15px 0;">Вход</button>
+      <button class="sign-up__backbutton sign-up__backbutton2">Вход</button>
   </div>
   <script src="./js/modal/modalapp.js"></script>
   <script src="./js/modal/modal.js"></script>
-  <script src="./js/form2.js"></script>
-  <script src="js/apps.js"></script>
-  <script src="js/apps2.js"></script>
-  <script src="js/form.js"></script>
+  <script src="./js/form/form.js"></script>
+  <script src="./js/form/form2.js"></script>
+  <script src="./js/app/apps.js"></script>
+  <script src="./js/app/apps2.js"></script>
+  <script src="./js/signup/signUp2.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
   <script src="js/suggest.js"></script>
   <script src="js/provider.js"></script>
   <script type="text/javascript">
-    const signUpButton = document.querySelector('.sign-up__button')
-    const modal = document.querySelector('.modal')
-
-    signUpButton.addEventListener('click', function () {
-      signUpButton.class.add('sign-up--open')
-      modal.classList.remove('modal--open')
-    })
  ///////////////// modal email i tel border////
     var elModalEmail = document.querySelector('#modalEmail')
       var elModalPhone = document.querySelector('#modalPhone')
@@ -477,6 +481,32 @@ function emailLogin() {
   x.style.left = "500px"
   y.style.left = "0px"
 }
+// royhatdan otish form
+var signUpClikc = document.querySelector('#signUpClikc')
+var signUpClikc2 = document.querySelector('#signUpClikc2')
+
+signUpClikc.addEventListener('click', function () {
+  signUpClikc.classList.add('border-sign')
+  signUpClikc2.classList.remove('border-sign')
+})
+
+signUpClikc2.addEventListener('click', function () {
+  signUpClikc2.classList.add('border-sign')
+  signUpClikc.classList.remove('border-sign')
+})
+
+// ////
+var z = document.getElementById("signUpBox1")
+    var c = document.getElementById("signUpBox2")
+
+    function signUpBox1() {
+      z.style.left = "0px"
+      c.style.left = "500px"
+    }
+    function signUpBox2() {
+      z.style.left = "-500px"
+      c.style.left = "0px"
+    }
 </script>
 </body>
 </html>
