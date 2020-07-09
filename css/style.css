@@ -1196,13 +1196,16 @@ nav {
         padding: 10px 15px;
     }*/
     .modal {
-        z-index: 999;
+        z-index: 99999;
     }
     .modalItems {
-        z-index: 999;
+        z-index: 99999;
     }
     .modalItem {
-        z-index: 999;
+        z-index: 99999;
+    }
+    .sign-up__modal {
+        z-index: 99999;
     }
     .modal__dialog {
         width: 400px;
@@ -1336,13 +1339,16 @@ nav {
         padding: 10px 15px;
     }
     .modal {
-        z-index: 999;
+        z-index: 99999;
     }
     .modalItems {
-        z-index: 999;
+        z-index: 99999;
     }
     .modalItem {
-        z-index: 999;
+        z-index: 99999;
+    }
+    .sign-up__modal {
+        z-index: 99999;
     }
     .modal__dialog {
         width: 400px;
@@ -1361,9 +1367,26 @@ nav {
     }
     .modalItem__button {
         right: 0;
+        font-size: 12px;
+    }
+    .modalItem__form-button {
+        font-size: 12px;
+    }
+    .modal__button {
+        font-size: 12px;
     }
     .modal__closes {
         width: 400px;
+    }
+    .sign-up__modalbox {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .sign-up__modalspan {
+        font-size: 13px;
+    }
+    .sign-up__signbutton {
+        font-size: 12px;
     }
 }
 @media (max-width: 886px) {
@@ -1485,13 +1508,16 @@ nav {
         padding: 10px 15px;
     }
     .modal {
-        z-index: 999;
+        z-index: 99999;
     }
     .modalItems {
-        z-index: 999;
+        z-index: 99999;
     }
     .modalItem {
-        z-index: 999;
+        z-index: 99999;
+    }
+    .sign-up__modal {
+        z-index: 99999;
     }
     .modal__dialog {
         width: 320px;
