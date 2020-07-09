@@ -75,7 +75,9 @@ nav {
 .toggle {
   display: none;
 }
-
+.menu-bar__mobile {
+  display: none;
+}
 .menu {
   padding: 0;
   margin: 0;
@@ -1089,9 +1091,6 @@ nav {
     display: block;
 }
 @media (max-width: 1150px) {
-    .navbar__links {
-    display: none;
-    }
     #header .container {
         display: flex;
     }
@@ -1228,9 +1227,6 @@ nav {
     }
 }
 @media (max-width: 980px){
-    .navbar__links {
-    display: none;
-    }
     #header .container {
         display: flex;
     }
@@ -1368,6 +1364,14 @@ nav {
     }
     .modal__closes {
         width: 400px;
+    }
+}
+@media (max-width: 886px) {
+    .navbar__links {
+        display: none;
+    }
+    .menu-bar__mobile {
+        display: block;
     }
 }
 @media (max-width: 750px) {
