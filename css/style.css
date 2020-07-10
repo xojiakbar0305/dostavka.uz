@@ -1395,11 +1395,32 @@ nav {
     }
     .menu-bar__mobile {
         display: block;
+        margin-top: 35px;
+        position: fixed;
+        right: 0;
+        top: 30px;
+        z-index: 999;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: red;
     }
 }
 @media (max-width: 750px) {
    .navbar__links {
     display: none;
+    }
+    .menu-bar__mobile {
+        display: block;
+        margin-top: 34px;
+        position: fixed;
+        right: 0;
+        top: 30px;
+        z-index: 999;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: red;
     }
     #header .container {
         display: flex;
@@ -1562,5 +1583,22 @@ nav {
     }
     .sign-up__backbutton {
         width: 320px;
+    }
+}
+@media (max-width: 650px) {
+     .navbar__links {
+        display: none;
+    }
+    .menu-bar__mobile {
+        display: block;
+        margin-top: 15px;
+        position: fixed;
+        right: 0;
+        top: 30px;
+        z-index: 999;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: red;
     }
 }

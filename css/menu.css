@@ -282,12 +282,17 @@ label.hamburger {
 }
 @media (max-width: 886px) {
   label.hamburger {
-    margin-top: 40px;
+    margin-top: 54px;
+  }
+}
+@media (max-width: 750px) {
+  label.hamburger {
+    margin-top: 52px;
   }
 }
 @media (max-width: 650px) {
   label.hamburger {
-    margin-top: 25px;
+    margin-top: 35px;
   }
 }
 label.hamburger:hover {

@@ -11,25 +11,24 @@
 	<title>Dostavka</title>
 </head>
 <body>
-<content class="menu-bar__mobile">
-
-  <input id="hamburger" class="hamburger" type="checkbox"/>
-  <label class="hamburger" for="hamburger">
-    <i></i>
-    <text>
-      <close>close</close>
-      <open>menu</open>
-    </text>
-  </label>
-  <section class="drawer-list">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Service</a></li>
-      </ul>
-      </section>
-</content>
+	<content class="menu-bar__mobile">
+		<input id="hamburger" class="hamburger" type="checkbox"/>
+		<label class="hamburger" for="hamburger">
+			<i></i>
+			<text>
+				<close>close</close>
+				<open>menu</open>
+			</text>
+		</label>
+		<section class="drawer-list">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Service</a></li>
+			</ul>
+		</section>
+	</content>
 	<button type="button" class="scroll-up__boxlink">
 		<span class="fab fa-intercom"></span>
 	</button>
@@ -323,7 +322,7 @@
 				<input type="tel" name="tel" placeholder="+998 Телефон" required>
 				<button class="modalItem__button">Получить код</button>
 				<input type="text" name="text" placeholder="Смс-код" required>
-			<button class="modalItem__form-button">Log In</button>
+				<button class="modalItem__form-button">Log In</button>
 			</form>
 		</div>
 		<div class="modal__closes">
@@ -332,55 +331,55 @@
 	</div>
 	<!-- parolni qayta tiklash telefonniki -->
 	<div class="sign-up__modal">
-    <div class="sign-up__container">
-      <div class="sign-up__modalboxs">
-        <div id="signUpClikc" class="sign-up__modalbox sign-up__leftborder" onclick="signUpBox1()">
-          <span>Для физлиц</span>
-        </div> 
-        <div id="signUpClikc2" class="sign-up__modalbox sign-up__rightborder" onclick="signUpBox2()">
-          <span>Для юрлиц</span>
-        </div>
-      </div>
-      <p style="margin-bottom: 30px;">Вопрос срочный? <a href="#">Оформите доставку</a> за одну минуту без регистрации и договора. Регистрация нужна если вы заказываете курьера регулярно.</p>
-      <!-- <div style="display: flex;"> -->
-      <form id="signUpBox1" class="sign-up__form1" action="#" action="GET">
-        <input class="sign-up__modalinput" type="text" name="text" placeholder="Имя" required>
-        <input class="sign-up__modalinput" style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="text" name="text" placeholder="Задайте пароль" required>
-        <input class="sign-up__modalinput" type="number" name="number" placeholder="Телефон">
-        <span class="sign-up__modalspan">Получить код</span>
-        <input class="sign-up__modalinput" type="number" name="number" placeholder="Смс-код" required>
-        <button class="sign-up__signbutton" type="submit">Регистрация</button>
-      </form>
-      <form id="signUpBox2" class="sign-up__form2" action="#" action="GET">
-        <input class="sign-up__modalinput" type="text" name="text" placeholder="Имя" required>
-        <input class="sign-up__modalinput" style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="text" name="text" placeholder="Задайте пароль" required>
-        <input class="sign-up__modalinput" type="number" name="number" placeholder="Телефон">
-        <input class="sign-up__modalinput" type="number" name="number" placeholder="Запасной телефон" required>
-        <button class="sign-up__signbutton" type="submit">Регистрация</button>
-      </form>
-  	<!-- </div> -->
-      <button class="sign-up__closebutton"><span class="fas fa-times"></span></button>
-    </div>
-      <button class="sign-up__backbutton">Вход</button>
-  </div>
-  	<script src="js/index.js"></script>
-  	<script src="./js/signup/signUp.js"></script>
-	<script src="./js/modal/modalapp.js"></script>
-	<script src="./js/modal/modal.js"></script>
-	<script>
+		<div class="sign-up__container">
+			<div class="sign-up__modalboxs">
+				<div id="signUpClikc" class="sign-up__modalbox sign-up__leftborder" onclick="signUpBox1()">
+					<span>Для физлиц</span>
+				</div> 
+				<div id="signUpClikc2" class="sign-up__modalbox sign-up__rightborder" onclick="signUpBox2()">
+					<span>Для юрлиц</span>
+				</div>
+			</div>
+			<p style="margin-bottom: 30px;">Вопрос срочный? <a href="#">Оформите доставку</a> за одну минуту без регистрации и договора. Регистрация нужна если вы заказываете курьера регулярно.</p>
+			<!-- <div style="display: flex;"> -->
+				<form id="signUpBox1" class="sign-up__form1" action="#" action="GET">
+					<input class="sign-up__modalinput" type="text" name="text" placeholder="Имя" required>
+					<input class="sign-up__modalinput" style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="text" name="text" placeholder="Задайте пароль" required>
+					<input class="sign-up__modalinput" type="number" name="number" placeholder="Телефон">
+					<span class="sign-up__modalspan">Получить код</span>
+					<input class="sign-up__modalinput" type="number" name="number" placeholder="Смс-код" required>
+					<button class="sign-up__signbutton" type="submit">Регистрация</button>
+				</form>
+				<form id="signUpBox2" class="sign-up__form2" action="#" action="GET">
+					<input class="sign-up__modalinput" type="text" name="text" placeholder="Имя" required>
+					<input class="sign-up__modalinput" style="width: 100%; margin-bottom: 15px; padding: 15px 10px; outline: none;" type="text" name="text" placeholder="Задайте пароль" required>
+					<input class="sign-up__modalinput" type="number" name="number" placeholder="Телефон">
+					<input class="sign-up__modalinput" type="number" name="number" placeholder="Запасной телефон" required>
+					<button class="sign-up__signbutton" type="submit">Регистрация</button>
+				</form>
+				<!-- </div> -->
+				<button class="sign-up__closebutton"><span class="fas fa-times"></span></button>
+			</div>
+			<button class="sign-up__backbutton">Вход</button>
+		</div>
+		<script src="js/index.js"></script>
+		<script src="./js/signup/signUp.js"></script>
+		<script src="./js/modal/modalapp.js"></script>
+		<script src="./js/modal/modal.js"></script>
+		<script>
 	//////////
-		var elModalEmail = document.querySelector('#modalEmail')
-    	var elModalPhone = document.querySelector('#modalPhone')
+	var elModalEmail = document.querySelector('#modalEmail')
+	var elModalPhone = document.querySelector('#modalPhone')
 
-    	elModalEmail.addEventListener('click', function () {
+	elModalEmail.addEventListener('click', function () {
   // alert('ishladim')
-      	elModalEmail.classList.add('border')
-      	elModalPhone.classList.remove('border')
-    	})
-    	elModalPhone.addEventListener('click', function () {
-      	elModalPhone.classList.add('border')
-      	elModalEmail.classList.remove('border')
-    	})
+  elModalEmail.classList.add('border')
+  elModalPhone.classList.remove('border')
+})
+	elModalPhone.addEventListener('click', function () {
+		elModalPhone.classList.add('border')
+		elModalEmail.classList.remove('border')
+	})
 
 
 //////////////////////////////////////
@@ -398,30 +397,30 @@ signUpClikc2.addEventListener('click', function () {
 })
 
 
-		var x = document.getElementById("numberLogin")
-		var y = document.getElementById("emailLogin")
+var x = document.getElementById("numberLogin")
+var y = document.getElementById("emailLogin")
 
-		function numberLogin() {
-			x.style.left = "0px"
-			y.style.left = "-450px"
-		}
-		function emailLogin() {
-			x.style.left = "500px"
-			y.style.left = "0px"
-		}
+function numberLogin() {
+	x.style.left = "0px"
+	y.style.left = "-450px"
+}
+function emailLogin() {
+	x.style.left = "500px"
+	y.style.left = "0px"
+}
 
 
-		var z = document.getElementById("signUpBox1")
-		var c = document.getElementById("signUpBox2")
+var z = document.getElementById("signUpBox1")
+var c = document.getElementById("signUpBox2")
 
-		function signUpBox1() {
-			z.style.left = "0px"
-			c.style.left = "500px"
-		}
-		function signUpBox2() {
-			z.style.left = "-500px"
-			c.style.left = "0px"
-		}
-	</script>
+function signUpBox1() {
+	z.style.left = "0px"
+	c.style.left = "500px"
+}
+function signUpBox2() {
+	z.style.left = "-500px"
+	c.style.left = "0px"
+}
+</script>
 </body>
 </html>

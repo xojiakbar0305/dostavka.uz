@@ -6,9 +6,30 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/application.css">
   <link rel="stylesheet" href="css/fa/css/all.min.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="scss/style.scss">
   <title>Dostavka</title>
 </head>
 <body>
+  <content class="menu-bar__mobile">
+
+  <input id="hamburger" class="hamburger" type="checkbox"/>
+  <label class="hamburger" for="hamburger">
+    <i></i>
+    <text>
+      <close>close</close>
+      <open>menu</open>
+    </text>
+  </label>
+  <section class="drawer-list">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+      </ul>
+      </section>
+</content>
   <header style="top: 0px; right: 0px; left: 0px; position: fixed; z-index: 999;">
     <nav>
       <input type="checkbox" id="checkbox2"/>
@@ -444,6 +465,7 @@
     </div>
       <button class="sign-up__backbutton sign-up__backbutton2">Вход</button>
   </div>
+  <script src="js/index.js"></script>
   <script src="./js/modal/modalapp.js"></script>
   <script src="./js/modal/modal.js"></script>
   <script src="./js/form/form.js"></script>
