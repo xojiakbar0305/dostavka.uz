@@ -11,7 +11,7 @@
 
 
     additionallyBoxItem.addEventListener('click', function () {
-      additionallyBoxItemBox.classList.add('display-block')
+      additionallyBoxItemBox.classList.toggle('display-block')
 })
 
     additionallyBoxText.addEventListener('click', function () {
@@ -68,7 +68,7 @@ additionallySpan2.addEventListener('click', function () {
 
 
 additionallyBoxItem2.addEventListener('click', function () {
-  additionallyBoxItemBox2.classList.add('display-block')
+  additionallyBoxItemBox2.classList.toggle('display-block')
   
 })
 

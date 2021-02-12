@@ -72,7 +72,7 @@
   <!-- header -->
   <!-- form -->
   <!-- ot kuda -->
-  <!-- <form action="#" method="POST"> -->
+  <form action="#" method="POST">
     <section class="site-form__section">
       <div class="site-form__onfoot">
         <h2 class="site-form__onfoottitle">Когда забрать и доставить?</h2>
@@ -314,17 +314,17 @@
       <h2 class="site-form__containerttitle">Что везем</h2>
       <div>
         <!-- <form style="padding: 0;" action="#"> -->
-          <input class="site__address" type="text" name="text" placeholder="Что везем">
+          <input id="toChoose" class="site__address" type="text" name="text" placeholder="Что везем">
           <!-- </form> -->
         </div>
         <ul class="site__sendlist">
-          <li>Документы</li>
-          <li>Продукты</li>
-          <li>Горячая еда</li>
-          <li>Подарок</li>
-          <li>Цветы</li>
-          <li>Торт</li>
-          <li>Другое</li>
+          <li class="to-choose1">Документы</li>
+          <li class="to-choose2">Продукты</li>
+          <li class="to-choose3">Горячая еда</li>
+          <li class="to-choose4">Подарок</li>
+          <li class="to-choose5">Цветы</li>
+          <li class="to-choose6">Торт</li>
+          <li class="to-choose7">Другое</li>
         </ul>
         <input id="inputLabel" type="checkbox" name="checkbox">
         <label style="margin-left: 5px;" for="inputLabel">Посылка большого размера</label>
@@ -347,12 +347,12 @@
       <div class="site-form__container box-send">
         <div class="site-form__boxform">
           <h2>Итого:1501 Рубли</h2>
-          <button id="send" class="site-send__button" type="button">Отправить заявку</button>
+          <button id="send" class="site-send__button" type="submit">Отправить заявку</button>
           <p>Параметры смс-уведомлений можно выбрать после отправки заявки</p>
         </div>
       </div>
     </section>
-  <!-- </form> -->
+  </form>
   <!-- form -->
   <!-- footer -->
   <div class="foter">
@@ -465,6 +465,7 @@
     </div>
       <button class="sign-up__backbutton sign-up__backbutton2">Вход</button>
   </div>
+  <script src="./js/tochoose.js"></script>
   <script src="js/index.js"></script>
   <script src="./js/modal/modalapp.js"></script>
   <script src="./js/modal/modal.js"></script>
